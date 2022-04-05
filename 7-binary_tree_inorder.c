@@ -11,10 +11,12 @@ void binary_tree_inorder(const binary_tree_t *tree, void (*func)(int))
 	if (!tree || !func)
 		return;
 
-	func(tree->n);
 
 	 /* first recur on left child */
 	binary_tree_inorder(tree->left, func);
+
+	func(tree->n);
+
 	 /* now recur on right child */
 	binary_tree_inorder(tree->right, func);
 }
