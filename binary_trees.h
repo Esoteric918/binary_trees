@@ -23,6 +23,7 @@ struct binary_tree_s
 };
 
 typedef struct binary_tree_s binary_tree_t;
+/* Binary Tree Search */
 typedef struct binary_tree_s bst_t;
 
 binary_tree_t *binary_tree_node(binary_tree_t *parent, int value);
@@ -47,6 +48,7 @@ binary_tree_t *binary_tree_uncle(binary_tree_t *node);
 void binary_tree_print(const binary_tree_t *tree);
 bool isPerfect(const binary_tree_t *tree, int d, int level);
 int getDepth(const binary_tree_t *tree);
+/* Binary tree search */
 int binary_tree_is_bst(const binary_tree_t *tree);
 bst_t *bst_insert(bst_t **tree, int value);
 bst_t *array_to_bst(int *array, size_t size);
